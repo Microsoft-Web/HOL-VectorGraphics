@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>The FacePlace</title>
+    <link href="CSS/Base.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/jquery-1.7.1.js"></script>
+    <script src="Scripts/kinetic-v3.8.4.js"></script>
+    <script src="Scripts/kinetic.Extensions.js"></script>
+    <script src="Scripts/Face.js"></script>
+    <script src="Scripts/Face.Database.js"></script>
+    <script src="Scripts/ImageHandler.js"></script>
+    <script src="Scripts/ImageHandler.Kinetic.js"></script>
+    <script src="Scripts/ImageHandler.Filters.js"></script>
+    <script src="Scripts/ImageHandler.Kinetic.Undo.js"></script>
+    <script src="Scripts/ShadowPopup.js"></script>
+    <script src="Scripts/NewGame.js"></script>
+    <script src="Scripts/NewGame.TopMenu.js"></script>
+    <script src="Scripts/Face.DragAndDropManager.js"></script>
+    <script src="Scripts/NewGame.BackgroundFileManager.js"></script>
+</head>
+<body>
+    <div id="pageOverlay">
+        <iframe id="pageFrame" name="pageFrame" class="help-page-container"></iframe>
+        <div class="page-container" id="pageContainer">
+            <section class="new-page-section">
+                <header>
+                    <div id="logo">
+                        <div class="logo-image">
+                            <img alt="Faceplace logo" src="Images/FullFaceplace_logo_fullcolor.svg" />
+                        </div>
+                        <div id="helpIcon" class="img-overlay">
+                            <div class="img-container">
+                                <img alt="help" src="Images/Assets/help_white.png" />
+                                <img id="help_image" alt="help" src="Images/Assets/help_blue.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <nav>
+                        <ul id="menuAssets">
+                            <li data-divassets="assetEyes">EYES</li>
+                            <li data-divassets="assetNoses">NOSE</li>
+                            <li data-divassets="assetLips">MOUTH</li>
+                            <li data-divassets="assetHair">HAIR</li>
+                            <li data-divassets="assetProps">PROPS</li>
+                            <li data-divassets="assetFilters">FILTERS</li>
+                        </ul>
+                    </nav>
+                </header>
+                <section id="mainSection">
+                    <div class="image_content_wrapper">
+                        <div id="imageContent">
+                            <section id="kineticContainer">
+                            </section>
+                            <section id="chooseImageSection">
+                                <p>
+                                    DRAG AND DROP AN IMAGE FROM YOUR DESKTOP</p>
+                                <p>
+                                    OR</p>
+                                <input type="button" value="BROWSE FILES" id="btnBrowseFiles" />
+                                <input type="file" id="btnBackgroundFile" />
+                            </section>
+                            <section class="trashIcon iconsWrapper" id="trashIcon">
+                                <div class="trashIconBlack">
+                                </div>
+                                <div class="trashIconBlue" style="z-index:50">
+                                    <div class="trashTip">
+                                        TRASH</div>
+                                </div>
+                            </section>
+                            <div id="trashIconDisabled" class="trashIcon iconsWrapper trashIconBlack">
+                            </div>
+                            <section class="glassIcon iconsWrapper" id="glassIcon">
+                                <div class="glassIconMinus">
+                                </div>
+                                <div class="glassIconPlus" style="z-index: 50">
+                                </div>
+                            </section>
+                            <div class="glassIconPlusOff">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="bottom_nav">
+                    <div class="buttonOverlay">
+                        <div class="buttonContainer" id="btnClose">
+                            <button class="button">
+                                CLOSE</button>
+                            <button class="button hovered">
+                                CLOSE</button>
+                        </div>
+                    </div>
+                    <div class="buttonOverlay">
+                        <div class="buttonContainer" id="btnSaveAs">
+                            <button class="button">
+                                SAVE AS</button>
+                            <button class="button hovered">
+                                SAVE AS</button>
+                        </div>
+                    </div>
+                    <div class="buttonOverlay">
+                        <div class="buttonContainer" id="btnSave">
+                            <button class="button">
+                                SAVE</button>
+                            <button class="button hovered">
+                                SAVE</button>
+                        </div>
+                    </div>
+                    <div class="buttonOverlay">
+                        <div class="buttonContainer" id="btnUndo">
+                            <button class="button">
+                                UNDO</button>
+                            <button class="button hovered">
+                                UNDO</button>
+                        </div>
+                    </div>
+                    <div class="buttonOverlay">
+                        <div class="buttonContainer" id="btnClearAll">
+                            <button class="button">
+                                CLEAR ALL</button>
+                            <button class="button hovered">
+                                CLEAR ALL</button>
+                        </div>
+                    </div>
+                    <div class="buttonOverlay">
+                        <div class="buttonContainer" id="btnDone">
+                            <button class="button">
+                                PREVIEW</button>
+                            <button class="button hovered">
+                                PREVIEW</button>
+                        </div>
+                    </div>
+                </section>
+                <footer>
+					© 2012 Microsoft
+				</footer>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

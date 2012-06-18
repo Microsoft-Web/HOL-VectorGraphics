@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{797C4CDD-146A-4375-BCA3-41B2A6EFD6DF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TheFacePlace</RootNamespace>
+    <AssemblyName>TheFacePlace</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CSS\OpenView.css" />
+    <Content Include="Fonts\YanoneKaffeesatz-Bold.svg" />
+    <Content Include="Fonts\YanoneKaffeesatz-Light.svg" />
+    <Content Include="Fonts\YanoneKaffeesatz-Regular.svg" />
+    <Content Include="Fonts\YanoneKaffeesatz-Thin.svg" />
+    <Content Include="Images\Assets\back_arrow.png" />
+    <Content Include="Images\Assets\checkmark.png" />
+    <Content Include="Images\Assets\closeout_white.png" />
+    <Content Include="Images\Assets\close_out_disabled.png" />
+    <Content Include="Images\Assets\help_disabled.png" />
+    <Content Include="Images\Assets\help_white.png" />
+    <Content Include="Images\Assets\magglass_max.png" />
+    <Content Include="Images\Assets\magglass_max_off.png" />
+    <Content Include="Images\Assets\magglass_min.png" />
+    <Content Include="Images\Assets\next_arrow.png" />
+    <Content Include="Images\Assets\nomark.png" />
+    <Content Include="Images\FaceAssets\Eyes\blue_pair.png" />
+    <Content Include="Images\FaceAssets\Eyes\cat_pair.png" />
+    <Content Include="Images\FaceAssets\Eyes\detached_pair.png" />
+    <Content Include="Images\FaceAssets\Eyes\goat_pair.png" />
+    <Content Include="Images\FaceAssets\Eyes\purple_pair.png" />
+    <Content Include="Images\FaceAssets\Eyes\red_pair.png" />
+    <Content Include="Images\Filters\filters_brighter.png" />
+    <Content Include="Images\Filters\filters_darker.png" />
+    <Content Include="Images\Filters\filters_desat.png" />
+    <Content Include="Images\Filters\filters_grayscale.png" />
+    <Content Include="Images\Filters\filters_invert.png" />
+    <Content Include="Images\Filters\filters_nofilter.png" />
+    <Content Include="Images\Filters\filters_outerglow.png" />
+    <Content Include="Images\Filters\filters_sat.png" />
+    <Content Include="Images\Assets\closeout_blue.png" />
+    <Content Include="Images\FullFaceplace_logo_fullcolor.svg" />
+    <Content Include="Images\InstructionsImages\number1.png" />
+    <Content Include="Images\InstructionsImages\number2.png" />
+    <Content Include="Images\InstructionsImages\number3.png" />
+    <Content Include="Images\InstructionsImages\TheFacePlace_Instructions_03.png" />
+    <Content Include="Images\InstructionsImages\TheFacePlace_Instructions_05.png" />
+    <Content Include="Images\InstructionsImages\TheFacePlace_Instructions_21.png" />
+    <Content Include="Images\poppers.png" />
+    <Content Include="Default.htm" />
+    <Content Include="NewGame.htm" />
+    <Content Include="CSS\Base.css" />
+    <Content Include="Scripts\Face.Database.SampleImages.js" />
+    <Content Include="Scripts\Face.DragAndDropManager.js" />
+    <Content Include="Images\Assets\trash_off.png" />
+    <Content Include="Images\Assets\trash_on.png" />
+    <Content Include="Images\FaceAssets\Eyes\blue_left.png" />
+    <Content Include="Images\FaceAssets\Eyes\blue_right.png" />
+    <Content Include="Images\FaceAssets\Eyes\cat_left.png" />
+    <Content Include="Images\FaceAssets\Eyes\cat_right.png" />
+    <Content Include="Images\FaceAssets\Eyes\detached_left.png" />
+    <Content Include="Images\FaceAssets\Eyes\detached_right.png" />
+    <Content Include="Images\FaceAssets\Eyes\goat_right.png" />
+    <Content Include="Images\FaceAssets\Eyes\green_left.png" />
+    <Content Include="Images\FaceAssets\Eyes\purple_left.png" />
+    <Content Include="Images\FaceAssets\Eyes\purple_right.png" />
+    <Content Include="Images\FaceAssets\Eyes\red_left.png" />
+    <Content Include="Images\FaceAssets\Eyes\red_right.png" />
+    <Content Include="Images\FaceAssets\Hair\blonde.png" />
+    <Content Include="Images\FaceAssets\Hair\brown.png" />
+    <Content Include="Images\FaceAssets\Hair\clump.png" />
+    <Content Include="Images\FaceAssets\Hair\patch.png" />
+    <Content Include="Images\FaceAssets\Hair\thin.png" />
+    <Content Include="Images\FaceAssets\Lips\buck_tooth.png" />
+    <Content Include="Images\FaceAssets\Lips\frog.png" />
+    <Content Include="Images\FaceAssets\Lips\pink.png" />
+    <Content Include="Images\FaceAssets\Lips\underbite.png" />
+    <Content Include="Images\FaceAssets\Lips\vampire.png" />
+    <Content Include="Images\FaceAssets\Noses\dog.png" />
+    <Content Include="Images\FaceAssets\Noses\orange.png" />
+    <Content Include="Images\FaceAssets\Noses\pickle.png" />
+    <Content Include="Images\FaceAssets\Noses\pig.png" />
+    <Content Include="Images\FaceAssets\Noses\red.png" />
+    <Content Include="Images\FaceAssets\Props\ladybug.png" />
+    <Content Include="Images\FaceAssets\Props\mole.png" />
+    <Content Include="Images\FaceAssets\Props\piercing.png" />
+    <Content Include="Images\FaceAssets\Props\pimple.png" />
+    <Content Include="Images\FaceAssets\Props\tear.png" />
+    <Content Include="Images\Facepic.jpg" />
+    <Content Include="Images\Assets\help_blue.png" />
+    <Content Include="OpenGame.htm" />
+    <Content Include="Scripts\ImageHandler.Kinetic.Undo.js" />
+    <Content Include="Scripts\kinetic-v3.8.4.js" />
+    <Content Include="Scripts\ShadowPopup.js" />
+    <Content Include="Scripts\NewGame.BackgroundFileManager.js" />
+    <Content Include="Scripts\Face.js" />
+    <Content Include="Scripts\Face.ImageManager.js" />
+    <Content Include="Scripts\OpenGame.js" />
+    <Content Include="Scripts\Face.Database.js" />
+    <Content Include="Scripts\Face.Pager.js" />
+    <Content Include="Scripts\ImageHandler.Filters.js" />
+    <Content Include="Scripts\InstructionsPageScript.js" />
+    <Content Include="Scripts\NewGame.TopMenu.js" />
+    <Content Include="Scripts\ImageHandler.js" />
+    <Content Include="Scripts\ImageHandler.Kinetic.js" />
+    <Content Include="Scripts\jquery-1.7.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\kinetic.Extensions.js" />
+    <Content Include="Scripts\NewGame.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Fonts\YanoneKaffeesatz-Bold.eot" />
+    <None Include="Fonts\YanoneKaffeesatz-Bold.ttf" />
+    <None Include="Fonts\YanoneKaffeesatz-Bold.woff" />
+    <None Include="Fonts\YanoneKaffeesatz-Light.eot" />
+    <None Include="Fonts\YanoneKaffeesatz-Light.ttf" />
+    <None Include="Fonts\YanoneKaffeesatz-Light.woff" />
+    <None Include="Fonts\YanoneKaffeesatz-Regular.eot" />
+    <None Include="Fonts\YanoneKaffeesatz-Regular.ttf" />
+    <None Include="Fonts\YanoneKaffeesatz-Regular.woff" />
+    <None Include="Fonts\YanoneKaffeesatz-Thin.eot" />
+    <None Include="Fonts\YanoneKaffeesatz-Thin.ttf" />
+    <None Include="Fonts\YanoneKaffeesatz-Thin.woff" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

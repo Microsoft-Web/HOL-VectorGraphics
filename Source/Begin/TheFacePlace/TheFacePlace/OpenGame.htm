@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Open Drawing - The Face Place</title>
+    <link href="CSS/Base.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/OpenView.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/jquery-1.7.1.js"></script>
+    <script src="Scripts/Face.js"></script>
+    <script src="Scripts/Face.Database.js"></script>
+    <script src="Scripts/Face.ImageManager.js"></script>
+    <script src="Scripts/Face.Pager.js"></script>
+    <script src="Scripts/Face.DragAndDropManager.js"></script>
+    <script src="Scripts/OpenGame.js"></script>
+</head>
+<body>
+    <div id="pageOverlay">
+        <div class="page-container" id="pageContainer">
+            <section class="new-page-section">
+                <header>
+                    <div id="logo">
+                        <div class="logo-image">
+                            <img alt="Faceplace logo" src="Images/FullFaceplace_logo_fullcolor.svg" />
+                        </div>
+                        <div id="helpIcon" class="img-overlay">
+                            <div class="img-container">
+                                <img alt="help" src="Images/Assets/help_white.png" />
+                                <img id="help_image" alt="help" src="Images/Assets/help_blue.png" />
+                            </div>
+                        </div>
+                        <div id="backIcon" class="img-overlay">
+                            <div class="img-container">
+                                <img alt="help" src="Images/Assets/closeout_white.png" />
+                                <img id="Img1" alt="help" src="Images/Assets/closeout_blue.png" />
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <section id="mainSection">
+                    <div class="game" id="newGame">
+                        <div class="thumbnail"></div>
+                        <input class="caption" placeholder="New Game" />
+                    </div>
+                </section>
+                <div id="commandBar">
+                    <a id="trashButton">
+                        <img alt="Trash" src="Images/Assets/trash_off.png" />
+                    </a>
+                    <div class="pager">
+                        <a id="backButton"><img src="Images/Assets/back_arrow.png" alt="Back" /></a>
+                        <span class="page-links"></span>
+                        <a id="nextButton"><img src="Images/Assets/next_arrow.png" alt="Next" /></a>
+                    </div>
+                    <input id="openButton" class="button" type="button" value="OPEN" />
+                </div>
+                <footer>
+                    © 2012 Microsoft
+                </footer>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
